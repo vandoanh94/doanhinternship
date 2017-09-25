@@ -1,2 +1,46 @@
-<h1>{{title}}</h1>
-daWDADAWD
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog tour-guide-size">
+    <div class="modal-content">
+      <div class="modal-header center">
+        <h2 class="modal-title">{{mdTitle}}</h2>
+      </div>
+      <div class="modal-body center tour-guide-size">
+        <div class="tour-guide-div-bodytitle">
+                <h3>{{guideSelect.title}}</h3>  
+        </div>
+        <div class="tour-guide-div-bodyimage">
+          <img src="{{guideSelect.image}}" class="modal-img">
+        </div>
+        <div class="tour-guide-div-bodydetail">
+          <p>
+            {{guideSelect.detail}}
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 center">
+            <button type="button" class="tour-guide-button" (click)="onClickPrevious()">&#xab; Previous</button>
+            <span class="dropup">
+              <button class="tour-guide-button-select" type="button" data-toggle="dropdown">{{guideButtonSelect}}
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="#">1</a></li> -->
+              <li *ngFor="let guide of guides">
+                  <a (click) = "onSelect(guide.id)">{{guide.title}}</a>
+              </li>
+            </ul>
+            </span>
+            <button type="button" class="tour-guide-button" (click)="onClickNext()">Next &#xbb;</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="tour-guide-button-endtour" data-dismiss="modal">End Tour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
