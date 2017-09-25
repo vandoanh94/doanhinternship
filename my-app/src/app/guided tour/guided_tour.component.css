@@ -1,4 +1,4 @@
- .modal-guide{
+ .tour-guide-size{
     width:900px;
     height:500px;
 }
@@ -17,24 +17,48 @@
     width: 200px;
     border: 3px solid #999;
   }
- 
-  .detail {
-    text-align: justify;
-  }
-
-  .bt {
-    background-color: #f93;
+  .tour-guide-div-bodytitle {
+    height: 40px;
+    width: 100%;
+    font-size: 20px
+}
+.tour-guide-div-bodyimage {
+  height: 300px;
+  width: 100%;
+}
+.tour-guide-div-bodydetail {
+  height: 100px;
+  width: 100%;
+  text-align: justify;
 }
 
-.btdropdown {
+  .btn-color {
+    background-color: #f93;
+}
+.tour-guide-button{
   background-color: #f93;
-  border: none;
-  color: white;
-  padding: 7px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
   font-size: 16px;
-  margin: 2px 1px;
-  cursor: pointer;
+}
+.tour-guide-button-select{
+  background-color: #f93;
+  width: 350px;
+  height: 40px;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  font-size: 16px;
+}
+.tour-guide-button-endtour{
+  background-color: #E4DCDC;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #A7ADA7;
+  font-size: 16px;
 }
