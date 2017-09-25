@@ -8,7 +8,7 @@
     overflow:auto;
 }
  .modal-img{
-    max-width: 50%;
+    max-width: 60%;
 }
  .center {
     text-align: center;
@@ -18,16 +18,16 @@
     border: 3px solid #999;
   }
   .tour-guide-div-bodytitle {
-    height: 40px;
+    height: 30px;
     width: 100%;
     font-size: 20px
 }
 .tour-guide-div-bodyimage {
-  height: 300px;
+  height: 360px;
   width: 100%;
 }
 .tour-guide-div-bodydetail {
-  height: 100px;
+  height: 60px;
   width: 100%;
   text-align: justify;
 }
