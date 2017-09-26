@@ -7,12 +7,14 @@ import { RouterModule }   from '@angular/router';
 import { LearnComponent } from "./learn/learn.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { GuidedtourComponent } from "./guided tour/guided_tour.component";
+import { PopupGuideComponent } from './popup-guide-question/popup-guide-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LearnComponent,
-    GuidedtourComponent
+    GuidedtourComponent,
+    PopupGuideComponent
   ],
   imports: [
     BrowserModule,

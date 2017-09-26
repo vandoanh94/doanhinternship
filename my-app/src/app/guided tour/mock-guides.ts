@@ -41,6 +41,6 @@ export const GUIDES: Guide[] = [
 {  id: 7,
     title:"Get PPT file (by mail)",
     image: "assets/images/guide_tour/Get PPT file_View.png",
-    detail:"" 
+    detail:"In Penetrace you can easily generate a Power Point from a topic. Chose the topic from which you want to generate a Power Point, click on 'Get PPT file (by mail)'. You will receive an e-mail with the report, as soon as it is generated (approximately 2-5 minutes)." 
 },
 ];

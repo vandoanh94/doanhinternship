@@ -1,10 +1,16 @@
-<h1>{{title}}</h1>
-
+<h1>
+    {{title}}</h1>
 <a href="#">/Index</a>
 <a href="/tour">/Tour</a>
 
-
 <div>
-      
-    <router-outlet></router-outlet>
+    <guided-tour></guided-tour>
+    <a data-toggle="modal" data-target="#myModal">
+        <span class="glyphicon glyphicon-question-sign btn-lg"></span>
+    </a>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Take a Tour</button>
+
+    <div *ngIf="show == 'show'">
+        <Popup-Guide></Popup-Guide>
+    </div>
 </div>

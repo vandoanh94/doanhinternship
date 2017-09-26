@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Guide } from "./guide";
 import { GUIDES } from "./mock-guides";
+import { GUIDES_EDIT } from './mock-guides-edit';
 
 
 @Component({
@@ -8,22 +9,28 @@ import { GUIDES } from "./mock-guides";
   templateUrl: './guided_tour.component.html',
   styleUrls: ['./guided_tour.component.css']
 })
-export class GuidedtourComponent {
+export class GuidedtourComponent implements OnInit {
+  ngOnInit() {
+    if (this.testUser) { 
+      this.guides = GUIDES_EDIT;
+    }
+  }
+  public testUser: boolean = true;
+
   mdTitle = 'Welcome to Trend Monitor';
   guides: Guide[] = GUIDES;
   guideSelect = this.guides[0];
   guideButtonSelect = this.guideSelect.title;
-  
   i = 0;
 
-  onSelect(idGuide){
-    this.i==idGuide;
+  onSelect(idGuide) {
+    this.i = idGuide;
     this.guideSelect = this.guides[idGuide];
     this.guideButtonSelect = this.guideSelect.title;
     if (idGuide > 0) {
       this.mdTitle = "The Tour Guide";
     }
-    if (idGuide == 0) {
+    else {
       this.mdTitle = "Welcome to Trend Monitor";
     }
   }
@@ -50,7 +57,7 @@ export class GuidedtourComponent {
     if (ii > 0) {
       this.mdTitle = "The Tour Guide";
     }
-    if (ii == 0) {
+    else {
       this.mdTitle = "Welcome to Trend Monitor";
     }
   }

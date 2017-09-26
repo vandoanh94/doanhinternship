@@ -44,6 +44,9 @@
   border: 2px solid #FFFFFF;
   font-size: 16px;
 }
+.center-screen{
+  position:absolute;
+}
 .tour-guide-button-select{
   background-color: #f93;
   width: 350px;
