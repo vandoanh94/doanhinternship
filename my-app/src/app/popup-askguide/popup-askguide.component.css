@@ -1,0 +1,26 @@
+.center{
+  text-align: center;
+}
+.popup-guide-size{
+  min-width: 600px;
+}
+.popup-guide-button{
+  background-color: #f93;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  font-size: 16px;
+  outline-color: #FFFFFF;
+}
+.popup-guide-button-end{
+  background-color: #C0C0C0;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  font-size: 16px;
+  outline-color: #FFFFFF;
+}

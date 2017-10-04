@@ -1,0 +1,95 @@
+.tour-guide-dialog-size{
+    width:60%;
+    height:90%;
+    min-width:700px;
+    min-height:460px; 
+}
+.tour-guide-content-size{
+  height:100%;
+  width:100%;
+}
+.tour-guide-header{
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  background-color: #ededed;
+  padding: 5px 10px;
+  width:100%;
+  height:8%;
+  font-weight: bold;
+  font-size: 25px;
+}
+ .tour-guide-body{
+    width:100%;
+    height:84%;
+    padding: 10px;    
+}
+.tour-guide-body-title {
+  height: 5%;
+  width: 100%;
+  font-size: 18px;
+}
+.tour-guide-body-image {
+  margin-top: 5px;
+  height:68%;
+  width: 100%;
+}
+.tour-guide-body-image-small {
+  margin-top: 5px;
+  height:40%;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tour-guide-body-detail {
+  height:27%;
+  width: 100%;
+  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.tour-guide-footer{
+  padding: 5px 10px;
+  width:100%;
+  height:8%;
+  min-height:36px;
+}
+.button {
+  height: 100%;
+  padding : 0px;
+}
+.tour-guide-footer-button{
+  height: 85%;
+  min-height: 24px;
+}
+.tour-guide-dropup-menu {
+  margin-bottom: 8px; 
+}
+.tour-guide-button{
+  background-color: #f93;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  margin: auto;
+}
+.tour-guide-button-dropup{
+  background-color: #f93;
+  width: 100%;
+  height:100%;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  margin: auto;
+}
+.tour-guide-button-endtour{
+  background-color: #E4DCDC;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #FFFFFF;
+  margin: auto;
+}

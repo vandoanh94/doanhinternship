@@ -1,0 +1,41 @@
+<a id="open-my-modal-tour-guide" [hidden]="true" data-toggle="modal" data-target="#my-modal-tour-guide"></a>
+<div class="modal fade" id="my-modal-tour-guide" role="dialog">
+  <div class="modal-dialog tour-guide-dialog-size">
+    <div class="modal-content tour-guide-content-size">
+      <div class="modal-header tour-guide-header text-center">{{currentGuide.modalTitle}}</div>
+      <div class="modal-body text-center tour-guide-body">
+        <div class="tour-guide-body-title">
+          <p *ngIf="currentGuide.id > 0">{{currentGuide.title}}</p>
+        </div>
+        <div *ngIf="currentGuide.detail.length < 500" class="tour-guide-body-image"><img src="{{currentGuide.image}}"></div>
+        <div *ngIf="currentGuide.detail.length > 500" class="tour-guide-body-image-small"><img src="{{currentGuide.image}}"></div>
+        <div class="tour-guide-body-detail" [innerHTML]="currentGuide.detail"></div>
+      </div>
+      <div class="modal-footer tour-guide-footer">
+        <div class="col-xs-8 col-xs-offset-2 tour-guide-footer-button text-center">
+          <div class="col-xs-2 button">
+            <button *ngIf="currentGuide.id > 0" type="button" class="btn tour-guide-button button text-center" (click)="onClickPrevious(currentGuide.id)">&#xab; Previous</button>
+          </div>
+          <div class="col-xs-8 button">
+            <span class="dropup">
+                <button class="btn tour-guide-button-dropup button text-center" type="button" data-toggle="dropdown">{{currentGuide.title}}
+                  <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu tour-guide-dropup-menu">
+              <li *ngFor="let guide of guides">
+                <a (click)="onSelectGuide(guide.id)">{{guide.title}}</a>
+              </li>
+            </ul>
+            </span>
+          </div>
+          <div class="col-xs-2 button">
+            <button *ngIf="currentGuide.id < guides.length - 1" type="button" class="btn tour-guide-button button text-center" (click)="onClickNext(currentGuide.id)">Next &#xbb;</button>
+          </div>
+        </div>
+        <div class="col-xs-2 tour-guide-footer-button text-center">
+          <button type="button" class="btn tour-guide-button-endtour button text-center" data-dismiss="modal">End Tour</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
